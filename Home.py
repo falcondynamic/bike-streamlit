@@ -41,4 +41,4 @@ st.subheader("Press predict if configuration is okay!!!")
 
 if st.button("Predict"):
     response = requests.get(f"https://bike-api-kmqz.onrender.com/prediction/{length_fork_mm}/{battery_wh}/{frame_material}/{number_of_gears}/{category}/{manufacturer}").json()
-    st.success(f"The price of your e-bike is {response["unit"]}{response['prediction']}")
+    st.success(f"The price of your e-bike is {response['unit']}{response['prediction']}")
